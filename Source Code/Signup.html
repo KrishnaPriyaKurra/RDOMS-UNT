@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>RDOMS Signup</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/rdoms_home.css" rel="stylesheet">
+    <link href="./css/signup.css" rel="stylesheet">
+    <script src="./js/navbar.js"></script>
+</head>
+
+<body style="background-image: url('./Images/Signup.jpg'); background-repeat: no-repeat; background-size: 100%;">
+    <div class="container">
+        <div class="MyNavbar">
+            <button class="Logo" onclick="home()">RDOMS-UNT</button>
+            <button class="Navcontents" onclick="signup()">Signup</button>
+            <button class="Navcontents" onclick="login()">Login</button>
+            <button class="Navcontents" onclick="dininghalls()">Dining Halls</button>
+            <button class="Navcontents" onclick="about()">About</button>
+            <button class="Navcontents" onclick="home()">Home</button>
+        </div>
+        <br>
+        <form id="regform" method="post" action="Registration.php">
+            <div class="mandatory">
+                <label id="fnamelabel">First Name</label>
+                <label id="lnamelabel">Last Name</label><br>
+                <input type="text" required id="fname" name="fname">
+                <input type="text" required id="lname" name="lname"><br>
+                <label id="emaillabel">Email</label><br>
+                <input type="text" required id="email" name="email"><br>
+                <label id="passlabel">Password</label>
+                <label id="conpasslabel">&nbsp;Confirm Password</label><br>
+                <input type="password" required id="pass" name="pass">
+                <input type="password" required id="conpass" name="conpass"><br><br>
+                <label id="untchecklabel">Are you a student/staff at UNT? </label>
+                <input type="radio" required id="untyes" name="untcheck" value="1">
+                <label for="untyes">Yes</label>
+                <input type="radio" required id="untno" name="untcheck" value="0">
+                <label for="untyes">No</label>
+            </div>
+            <br>
+            <div class="optional">
+                <label id="untidlabel">UNT ID Number</label><br>
+                <input type="text" id="untid" name="untid" pattern="\d{8}"><br>
+                <label id="referrallabel">Referral Code</label><br>
+                <input type="text" id="referral" name="referral"><br><br>
+                <input type="submit" id="register" value="Register">
+            </div>
+        </form>
+        <button class="contact" href="#">Contact Us</button>
+    </div>
+</body>
+
+</html>

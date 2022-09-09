@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>RDOMS Manager Home</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/rdoms_home.css" rel="stylesheet">
+    <link href="./css/managerhome.css" rel="stylesheet">
+    <script src="./js/navbar.js"></script>
+</head>
+
+<body style="background-image: none;">
+    <div class="container">
+        <div class="MyNavbar">
+            <button class="Logo" onclick="home()">RDOMS-UNT</button>
+            <button class="Navcontents" onclick="logout()">Logout</button>
+            <button class="Navcontents">Edit Account</button>
+            <button class="Navcontents" onclick="accounthome()">Account Home</button>
+        </div>
+        <div class="orderslist">
+            <div class="orderlabel">
+                <p>Current Orders</p>
+            </div>
+        </div>
+        <div class="boardcount">
+            <div class="todayboard">
+                <div class="todayboardlabel">
+                    <p>Today's Board Count</p>
+                    <br>
+                    <p>For Breakfast : </p>
+                    <p id="Breakfastcount"></p>
+                    <br>
+                    <p>For Lunch : </p>
+                    <p id="Lunchcount"></p>
+                    <br>
+                    <p>For Dinner : </p>
+                    <p id="Dinnercount"></p>
+                </div>
+            </div>
+            <div class="tomorrowboard">
+                <div class="tomorrowboardlabel">
+                    <p>Tomorrow's Board Count</p>
+                    <br>
+                    <p>For Breakfast : </p>
+                    <p id="Breakfastcount"></p>
+                    <br>
+                    <p>For Lunch : </p>
+                    <p id="Lunchcount"></p>
+                    <br>
+                    <p>For Dinner : </p>
+                    <p id="Dinnercount"></p>
+                </div>
+            </div>
+        </div>
+        <button class="contact" href="#">Contact Us</button>
+    </div>
+</body>
+
+</html>

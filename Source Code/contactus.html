@@ -1,0 +1,121 @@
+<html>
+
+<head>
+	<style>
+		#contactform {
+			position: absolute;
+			bottom: 50;
+			right: 10;
+			padding: 50px;
+			background-color: forestgreen;
+			height: max-content;
+			width: max-content;
+			border-radius: 20px;
+			border: medium black groove;
+			display: none;
+			font-size: 20px;
+		}
+
+		#contactfirstname,
+		#contactemail,
+		#contactissue {
+			color: white;
+		}
+
+		#formtable {
+			border-spacing: 10px 15px;
+		}
+
+		#contactfirsttext,
+		#contactemailtext,
+		#contactissuetext {
+			border-radius: 20px;
+			border: 0;
+			text-decoration: none;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 15px;
+			width: 300px;
+		}
+
+		#servicesubmit {
+			color: forestgreen;
+			background-color: white;
+			border: none;
+			text-decoration: none;
+			border-radius: 20px;
+			padding: 10px;
+			width: 200px;
+		}
+
+		#overlayform {
+			font-family: Proxima Nova;
+		}
+	</style>
+	<script>
+		function showcontact() {
+			var element = document.getElementById("contactform");
+			var style = window.getComputedStyle(element);
+			var top = style.getPropertyValue("display");
+			if (top == "none")
+				document.getElementById("contactform").style.display = "block";
+			else {
+				document.getElementById("contactform").style.display = "none";
+				document.getElementById("contactfirsttext").value = "";
+				document.getElementById("contactemailtext").value = "";
+				document.getElementById("contactissuetext").value = "";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="overlayform">
+		<form id="contactform" action="contactsubmit.php" method="POST">
+			<h2 style="text-align:center; color:white;">Service Request</h2>
+			<br>
+			<table id="formtable">
+				<tr>
+					<td>
+						<label id="contactfirstname"> First Name</label>
+					</td>
+					<td>&nbsp;</td>
+					<td>
+						<input id="contactfirsttext" name="contactfirsttext" type="text" required>
+					</td>
+				</tr>
+				<tr>
+					<td><br></td>
+				</tr>
+				<tr>
+					<td>
+						<label id="contactemail"> Email</label>
+					</td>
+					<td>&nbsp;</td>
+					<td>
+						<input id="contactemailtext" name="contactemailtext" type="text" required>
+					</td>
+				</tr>
+				<tr>
+					<td><br></td>
+				</tr>
+				<tr>
+					<td>
+						<label id="contactissue"> Issue </label><br>
+					</td>
+					<td>&nbsp;</td>
+					<td>
+						<textarea id="contactissuetext" name="contactissuetext" cols="40" rows="10" required></textarea>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<div style="text-align:center;">
+				<input id="servicesubmit" type="submit" value="Submit">
+			</div>
+		</form>
+
+	</div>
+</body>
+
+</html>

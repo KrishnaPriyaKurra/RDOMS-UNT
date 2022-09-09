@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>Order Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/rdoms_home.css" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/userhome.js"></script>
+</head>
+
+<body style="background-image: none;">
+    <div class="container">
+        <div class="MyNavbar">
+            <button class="Logo" onclick="home()">RDOMS-UNT</button>
+            <button class="Navcontents" onclick="logout()">Logout</button>
+            <button class="Navcontents">Edit Account</button>
+            <button class="Navcontents" onclick="accounthome()">Account Home</button>
+        </div>
+        <br /><br /><br /><br /><br />
+        <h1 style="text-align: center;">Select Order</h1>
+        <div class="order-content-wrapper">
+            <br />
+
+            <div class="sub-title ">
+                <span class="cart-btn gotocart" style="cursor: pointer;">Cart<span><span></span>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                <div class="col col-lg-5 left-panel">
+                    <h1 class="dine-message text-start">
+                        Where do you want to dine <i>today</i>?
+                    </h1>
+
+                    <div class="btn-group order-btns" role="group">
+                        <div class="btn cta fst-italic text-wrap">
+                            Bruceteria
+                        </div>
+                        <div class="btn cta fst-italic text-wrap">
+                            Champs
+                        </div>
+                        <div class="btn cta fst-italic text-wrap">
+                            Kitchen West
+                        </div>
+                        <div class="btn cta fst-italic text-wrap">
+                            Mean Greens
+                        </div>
+                        <div class="btn cta fst-italic text-wrap">
+                            Eagle Landing
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-lg-7 right-panel">
+                    <div class="row order-info">
+                        <div class="col">
+                            <label>Now serving : <i>Lunch</i></label>
+                        </div>
+                        <div class="col text-end location">
+                            <label>Location : <i id="selected-restaurant"></i></label>
+                        </div>
+                    </div>
+                    <div class="menu-list">
+                        <div class="dropdown">
+                            <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Entrees and Sides
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" id="E" href="#">Entrees and Sides 1</a></li>
+                                <li><a class="dropdown-item" id="E" href="#">Entrees and Sides 2</a></li>
+                                <li>
+                                    <a class="dropdown-item" id="E" href="#">Entrees and Sides 3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Mediterranean
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" id="M" href="#">Mediterranean 1</a></li>
+                                <li><a class="dropdown-item" id="M" href="#">Mediterranean 2</a></li>
+                                <li>
+                                    <a class="dropdown-item" id="M" href="#">Mediterranean 3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton3"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pizza and Pasta
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                <li><a class="dropdown-item" id="P" href="#">Pizza and Pasta 1</a></li>
+                                <li><a class="dropdown-item" id="P" href="#">Pizza and Pasta 2</a></li>
+                                <li>
+                                    <a class="dropdown-item" id="P" href="#">Pizza and Pasta 3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton4"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Soup Du Jour
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                <li><a class="dropdown-item" id="S" href="#">Soup Du Jour 1</a></li>
+                                <li><a class="dropdown-item" id="S" href="#">Soup Du Jour 2</a></li>
+                                <li>
+                                    <a class="dropdown-item" id="S" href="#">Soup Du Jour 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
