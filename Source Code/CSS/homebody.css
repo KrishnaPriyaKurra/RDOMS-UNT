@@ -1,0 +1,9 @@
+body {
+    background-image: url('../Images/Main.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}

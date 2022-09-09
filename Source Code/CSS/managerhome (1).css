@@ -1,0 +1,40 @@
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 8px;
+  }
+.mainheading{
+    text-align: center;
+    font-family: Proxima Nova;
+    font-size: 2vmax;
+    font-weight: 500px;
+    color: forestgreen;
+}
+.orderslist{
+    float:left;
+    background-color: transparent;
+    width: 70%;
+    height: 85%;
+}
+.boardcount{
+    float:right;
+    background-color: transparent;
+    width:30%;
+    height: 85%;
+}
+.orderlabel, .todayboardlabel, .tomorrowboardlabel{
+    text-align: center;
+    font-family: Proxima Nova;
+    color: forestgreen;
+    font-weight: 200px;
+}
+.todayboard{
+    background-color: transparent;
+    height: 50%;
+}
+.tomorrowboard{
+    background-color: transparent;
+    height: 50%;
+}
