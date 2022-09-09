@@ -1,0 +1,73 @@
+body {
+    /*background-image: url('../Images/Its about food.png');*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    position:relative;
+    width: 1090px;
+    height: max-content;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 20;
+    color: forestgreen;
+    background:none;
+    font-family: Proxima Nova;
+    border:none;
+    font-size: 1.5vmax;
+}
+
+h2 {
+    text-align: center;
+    padding: 20;
+    color: forestgreen;
+    background:none;
+    font-family: Proxima Nova;
+    border:none;
+    font-size: 1.5vmax;
+}
+
+.Website_Info{
+    position: absolute;
+    color: forestgreen;
+    padding: 20;
+    background:none;
+    font-family: Proxima Nova;
+    border:none;
+    font-size: 1.5vmax;
+}
+
+.tab{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.Team_members{
+    float: right;
+    bottom: 30px;
+    right: 20px;
+    border-color: transparent;
+    border-radius: 20px;
+    color: rgb(165, 131, 204);
+    font-family: Proxima Nova;
+    font-size: 1.5vmax;
+    padding: 10;
+    text-decoration: none;
+
+}
+
+.Quote{
+    text-align: center;
+    background: none;
+    color: mediumblue;
+    text-decoration: wavy;
+    text-shadow: 40px;
+    font-size: x-large;
+    padding: 10px;
+    font-family: Proxima Nova;
+}
+
+
