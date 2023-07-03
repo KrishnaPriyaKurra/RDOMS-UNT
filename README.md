@@ -1,4 +1,4 @@
-# Residential Dining Operations Management System at UNT
+# Residential Dining Operations Management System
 
 
 This project is a web application that allows university students to check-in into various university dining halls to order food online. The user can register and log-in
